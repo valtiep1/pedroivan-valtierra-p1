@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Weather";
+  src: url("fonts/Merriweather-Regular.ttf");
+}
+@font-face {
+  font-family: "OKAY";
+  src: url("fonts/DancingScript-Regular.ttf");
+}
+
+body {
+  font-family: "Open Sans", "sans-serif", "Weather", "OKAY";
+  color: #000000;
+  background-color: #ececec;
+}
+header {
+  background-color: #ececec;
+  font-family: "OKAY";
+  width: 98%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-top: solid 10px #fc0000;
+  border-bottom: solid 10px #009dff;
+  border-left: solid 10px #fc0000;
+  border-right: solid 10px #28ab00;
+  padding-bottom: 1.2em;
+  padding-top: 1.2em;
+  box-shadow: 6px 6px black;
+}
+h1 {
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#message {
+  font-family: "OKAY";
+}
+#arkdesc {
+  font-family: "Weather";
+}
+
+h2 {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+img {
+  clear: both;
+  height: 100px;
+  text-align: center;
+}
+.accordion {
+  font-family: "OKAY";
+  font-size: large;
+  background-color: #eee;
+  color: #000000;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  border: none;
+  transition: 0.4s;
+  box-shadow: 5px 5px black;
+  margin-bottom: #ccc;
+  padding: 0.75em;
+}
+.accordion:hover,
+.accordion:active {
+  background-color: #090274;
+  color: #009dff;
+  
+}
+.panel {
+  overflow: hidden;
+  padding: 0.10em;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+}
+div.div1 {
+  float: left;
+  width: 49%;
+  text-align: center;
+  font-family: "OKAY";
+  font-size: large;
+}
+div.div2 {
+  float: right;
+  width: 49%;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: large;
+}
+#tablediv1 {
+  width: 95%;
+  text-align: center;
+}
+
+div.div3 {
+  font-family: "Open Sans";
+}
+#pros {
+  width: 45%;
+  text-align: left;
+  float: left;
+}
+#cons {
+  width: 45%;
+  text-align: left;
+  float: right;
+}
+
+#ark1 {
+  width: 30%;
+  height: 40%;
+}
+
+#ark01 {
+  text-align: center;
+  height: 40%;
+}
+#pvh3{
+    text-align: left;
+    margin-left: 1em;
+    color: #646464;
+    font-family: 'OKAY';
+}
+footer{
+    width: 100%;
+    font-family: 'Weather';
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+    background-color: #009dff;
+    text-align: center;
+    line-height: 2em;
+    clear: both;
+    margin-top: 5%;
+    border-radius: 15px 10px 15px 10px;
+    margin-bottom: 2em;
+}
+
+
+@media only screen and (max-width: 650px) {
+  body {
+    font-size: small;
+  }
+  header {
+    width: 95%;
+  }
+
+  div.div1 {
+    font-size: small;
+  }
+  div.div2 {
+    font-size: small;
+  }
+  div.div3 {
+    font-size: small;
+  }
+  footer{
+    margin-top: 35%;
+  }
+}
